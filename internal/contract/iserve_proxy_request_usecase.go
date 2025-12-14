@@ -3,7 +3,7 @@ package contract
 import (
 	"context"
 
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/entity"
+	"github.com/mikiasgoitom/RevProx/internal/domain/entity"
 )
 
 type IServeProxyRequestUseCase interface {

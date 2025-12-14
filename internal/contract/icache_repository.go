@@ -3,8 +3,8 @@ package contract
 import (
 	"context"
 
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/entity"
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/valueobject"
+	"github.com/mikiasgoitom/RevProx/internal/domain/entity"
+	valueobject "github.com/mikiasgoitom/RevProx/internal/domain/valueObject"
 )
 type ICacheRepository interface {
 	Get(ctx context.Context, key valueobject.CacheKey) (entity.CacheEntry, bool, error)

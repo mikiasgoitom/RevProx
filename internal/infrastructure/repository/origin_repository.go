@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/mikiasgoitom/caching-proxy/internal/contract"
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/entity"
+	"github.com/mikiasgoitom/RevProx/internal/contract"
+	"github.com/mikiasgoitom/RevProx/internal/domain/entity"
 )
 
 type OriginRepository struct {

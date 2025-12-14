@@ -2,7 +2,8 @@ package contract
 
 import (
 	"context"
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/valueobject"
+
+	valueobject "github.com/mikiasgoitom/RevProx/internal/domain/valueObject"
 )
 
 type ILogger interface {

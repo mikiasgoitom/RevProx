@@ -3,7 +3,7 @@ package timeservice
 import (
 	"time"
 
-	"github.com/mikiasgoitom/caching-proxy/internal/contract"
+	"github.com/mikiasgoitom/RevProx/internal/contract"
 )
 
 type TimeService struct{
