@@ -3,8 +3,8 @@ package usecase
 import (
 	"context"
 
-	"github.com/mikiasgoitom/caching-proxy/internal/contract"
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/valueobject"
+	"github.com/mikiasgoitom/RevProx/internal/contract"
+	valueobject "github.com/mikiasgoitom/RevProx/internal/domain/valueObject"
 )
 
 type HealthCheckUseCase struct {

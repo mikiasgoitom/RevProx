@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mikiasgoitom/caching-proxy/internal/contract"
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/entity"
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/valueobject"
+	"github.com/mikiasgoitom/RevProx/internal/contract"
+	"github.com/mikiasgoitom/RevProx/internal/domain/entity"
+	valueobject "github.com/mikiasgoitom/RevProx/internal/domain/valueObject"
 )
 
 type ServeProxyRequestUseCase struct {
