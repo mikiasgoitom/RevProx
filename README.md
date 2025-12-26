@@ -1,4 +1,4 @@
-# RevProxy - A Local Caching Reverse Proxy in Go
+# RevProx - A Local Caching Reverse Proxy in Go
 
 RevProxy is a high-performance local caching reverse proxy server written in Go. It forwards HTTP requests to an upstream origin server, caches the responses, and serves cached content for subsequent requests to improve performance and reduce latency.
 
