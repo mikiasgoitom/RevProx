@@ -1,24 +1,49 @@
 package usecase
 
 import (
-	"context"
+  "context"
 
-	"github.com/mikiasgoitom/caching-proxy/internal/contract"
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/entity"
+  "github.com/mikiasgoitom/RevProx/internal/contract"
+  "github.com/mikiasgoitom/RevProx/internal/domain/entity"
 )
 
 type MetricsUseCase struct{}
 
-func NewMetricsUseCase() contract.IMetricsUseCase {
-	return &MetricsUseCase{}
+// IncHit implements [contract.IMetricsUseCase].
+func (m *MetricsUseCase) IncHit(ctx context.Context) error {
+  panic("unimplemented")
 }
 
-func (uc *MetricsUseCase) IncHit(ctx context.Context) error                               {}
-func (uc *MetricsUseCase) IncMiss(ctx context.Context) error                              {}
-func (uc *MetricsUseCase) RecordUpstreamLatency(ctx context.Context, latency int64) error {}
-func (uc *MetricsUseCase) RecordCacheLatency(ctx context.Context, latency int64) error    {}
-func (uc *MetricsUseCase) RecordTotalLatency(ctx context.Context, latency int64) error    {}
+// IncMiss implements [contract.IMetricsUseCase].
+func (m *MetricsUseCase) IncMiss(ctx context.Context) error {
+  panic("unimplemented")
+}
 
-// IncEviction(ctx context.Context) error
-func (uc *MetricsUseCase) Snapshot(ctx context.Context) (entity.Metrics, error) {}
-func (uc *MetricsUseCase) Reset(ctx context.Context) error                      {}
+// RecordCacheLatency implements [contract.IMetricsUseCase].
+func (m *MetricsUseCase) RecordCacheLatency(ctx context.Context, latency int64) error {
+  panic("unimplemented")
+}
+
+// RecordTotalLatency implements [contract.IMetricsUseCase].
+func (m *MetricsUseCase) RecordTotalLatency(ctx context.Context, latency int64) error {
+  panic("unimplemented")
+}
+
+// RecordUpstreamLatency implements [contract.IMetricsUseCase].
+func (m *MetricsUseCase) RecordUpstreamLatency(ctx context.Context, latency int64) error {
+  panic("unimplemented")
+}
+
+// Reset implements [contract.IMetricsUseCase].
+func (m *MetricsUseCase) Reset(ctx context.Context) error {
+  panic("unimplemented")
+}
+
+// Snapshot implements [contract.IMetricsUseCase].
+func (m *MetricsUseCase) Snapshot(ctx context.Context) (entity.Metrics, error) {
+  panic("unimplemented")
+}
+
+func NewMetricsUseCase() contract.IMetricsUseCase {
+  return &MetricsUseCase{}
+}
