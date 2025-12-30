@@ -2,8 +2,7 @@ package contract
 
 import (
 	"context"
-
-	valueobject "github.com/mikiasgoitom/RevProx/internal/domain/valueObject"
+	"github.com/mikiasgoitom/RevProx/internal/domain/valueobject"
 )
 
 type ILogger interface {

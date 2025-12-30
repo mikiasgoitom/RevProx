@@ -1,6 +1,8 @@
 package entity
 
-import valueobject "github.com/mikiasgoitom/RevProx/internal/domain/valueObject"
+import (
+	"github.com/mikiasgoitom/RevProx/internal/domain/valueobject"
+)
 
 type CacheEntry struct {
 	Key       valueobject.CacheKey

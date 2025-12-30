@@ -7,7 +7,7 @@ import (
 type ResponseModel struct {
 	ID          string
 	Status      int
-	Header      http.Header
+	Headers      http.Header
 	Body        []byte
 	GeneratedAt int64
 	Cacheable   bool

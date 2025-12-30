@@ -7,6 +7,6 @@ type Metrics struct {
 	Misses          uint64
 	UpstreamLatency time.Duration
 	CacheLatency    time.Duration
-	TotalLatency    time.Duration
+	TotalLatency    time.Duration	
 	Evictions       uint64
 }

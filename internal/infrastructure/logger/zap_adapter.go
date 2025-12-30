@@ -3,8 +3,8 @@ package logger
 import (
 	"context"
 
-	"github.com/mikiasgoitom/caching-proxy/internal/contract"
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/valueobject"
+	"github.com/mikiasgoitom/RevProx/internal/contract"
+	"github.com/mikiasgoitom/RevProx/internal/domain/valueobject"
 	"go.uber.org/zap"
 )
 

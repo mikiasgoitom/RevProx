@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/mikiasgoitom/RevProx/internal/domain/entity"
-	valueobject "github.com/mikiasgoitom/RevProx/internal/domain/valueObject"
+	"github.com/mikiasgoitom/RevProx/internal/domain/valueobject"
 )
 
 type Config struct {

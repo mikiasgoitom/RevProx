@@ -1,6 +1,6 @@
 package valueobject
 
 type CacheKey struct {
-	Method        string
+	Method string
 	NormalizedURL string
 }

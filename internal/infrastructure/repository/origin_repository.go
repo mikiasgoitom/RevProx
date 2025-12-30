@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/mikiasgoitom/caching-proxy/internal/contract"
-	"github.com/mikiasgoitom/caching-proxy/internal/domain/entity"
+	"github.com/mikiasgoitom/RevProx/internal/contract"
+	"github.com/mikiasgoitom/RevProx/internal/domain/entity"
 )
 
 type OriginRepository struct {
@@ -59,7 +59,7 @@ func (r *OriginRepository) Fetch(ctx context.Context, req entity.RequestModel) (
 	response := entity.ResponseModel{
 		ID:          uuid.New().String(),
 		Status:      httpResp.StatusCode,
-		Header:      httpResp.Header.Clone(),
+		Headers:      httpResp.Header.Clone(),
 		Body:        body,
 		GeneratedAt: r.timeService.NowUnix(),
 		Cacheable:   strings.Contains(cacheControlHeader, "public"),

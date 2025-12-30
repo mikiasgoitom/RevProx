@@ -3,17 +3,14 @@ package timeservice
 import (
 	"time"
 
-	"github.com/mikiasgoitom/caching-proxy/internal/contract"
+	"github.com/mikiasgoitom/RevProx/internal/contract"
 )
 
-type TimeService struct{
-	timeservice contract.ITimeService
+type TimeService struct {
 }
 
-func NewTimeService(timeserv contract.ITimeService) *TimeService {
-	return &TimeService{
-		timeservice: timeserv,
-	}
+func NewTimeService() contract.ITimeService {
+	return &TimeService{}
 }
 
 var _ contract.ITimeService = (*TimeService)(nil)
