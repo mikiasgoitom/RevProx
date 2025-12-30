@@ -1,6 +1,6 @@
 module github.com/mikiasgoitom/RevProx
 
-go 1.23
+go 1.25.1
 
 require (
 	github.com/c2h5oh/datasize v0.0.0-20231215233829-aa82cc1e6500
